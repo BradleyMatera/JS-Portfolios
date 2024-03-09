@@ -6,22 +6,28 @@ Welcome to my GitHub portfolio, where I showcase my expertise and projects using
 
 This portfolio repository is organized into separate directories for each technology, each containing its own projects and a detailed `README.md`. The structure is as follows:
 
-/portfolio-repo
-/angular-js
-/projects
-README.md
-/vue-js
-/projects
-README.md
-/react-js
-/projects
-README.md
-/vanilla-js
-/projects
-README.md
+## portfolio-repo
 
-vbnet
-Copy code
+### angular-js
+
+- /projects
+- README.md
+
+### - vue-js
+
+- /projects
+- README.md
+
+### - react-js
+
+- /projects
+- README.md
+
+### - vanilla-js
+
+- /projects
+- README.md
+
 
 ## Angular.js
 
