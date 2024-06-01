@@ -2,7 +2,7 @@
   "name": "reactapptest",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://BradleyMatera.github.io/JS-Portfolios/",
+  "homepage": "https://BradleyMatera.github.io/JS-Portfolios/reactapptest",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -15,10 +15,10 @@
     "gh-pages": "^6.1.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-router-dom": "^6.23.1",
     "react-scripts": "^5.0.1"
   },
   "main": "index.js",
-  "devDependencies": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
