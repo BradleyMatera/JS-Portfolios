@@ -166,6 +166,53 @@ function App() {
     </div>
   </div>
 </section>
+<section id="contact" className="py-5">
+  <div className="container">
+    <h2 className="text-center mb-5">Get in Touch</h2>
+    <div className="row">
+      <div className="col-lg-6 mb-4">
+        <form>
+          <div className="mb-3">
+            <label for="name" className="form-label">Name</label>
+            <input type="text" className="form-control" id="name" required />
+          </div>
+          <div className="mb-3">
+            <label for="email" className="form-label">Email</label>
+            <input type="email" className="form-control" id="email" required />
+          </div>
+          <div className="mb-3">
+            <label for="message" className="form-label">Message</label>
+            <textarea className="form-control" id="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" className="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+      <div className="col-lg-6">
+        <div className="card mb-4">
+          <div className="card-body">
+            <h5 className="card-title">Contact Info</h5>
+            <p className="card-text">
+              <i className="fas fa-map-marker-alt"></i> Olympia, WA, USA<br />
+              <i className="fas fa-envelope"></i> bradmatera@gmail.com<br />
+              <i className="fas fa-phone"></i> +1 (360) 970-0581
+            </p>
+          </div>
+        </div>
+        <div className="d-flex justify-content-center">
+          <a href="https://www.linkedin.com/in/brad-matera-889179260/" target="_blank" className="btn btn-primary me-3">
+            <i className="fab fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="https://github.com/chunkywizard1992" target="_blank" className="btn btn-primary me-3">
+            <i className="fab fa-github"></i> GitHub
+          </a>
+          <a href="https://www.youtube.com/channel/UCo4EcyuHEjfSfozw8LrwfZg" target="_blank" className="btn btn-primary">
+            <i className="fab fa-youtube"></i> YouTube
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
     </div>
