@@ -20,11 +20,14 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        working-directory: ./react-js/reactapptest
 
       - name: Build the React app
         run: npm run build
+        working-directory: ./react-js/reactapptest
 
       - name: Deploy to GitHub Pages
         run: npm run deploy
+        working-directory: ./react-js/reactapptest
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
