@@ -18,19 +18,21 @@ jobs:
         with:
           node-version: '16'
 
-      - name: Navigate to React app directory
-        run: cd reactapptest
-
-      - name: Install dependencies
-        run: npm install
+      - name: Navigate to React app directory and Install dependencies
+        run: |
+          cd reactapptest
+          npm install
 
       - name: Build the React app
-        run: npm run build
+        run: |
+          cd reactapptest
+          npm run build
 
       - name: Deploy to GitHub Pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          cd reactapptest
           git config --global user.email "you@example.com"
           git config --global user.name "Your Name"
           npm run deploy
