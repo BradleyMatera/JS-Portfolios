@@ -2,7 +2,7 @@
   "name": "reactapptest",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://BradleyMatera.github.io/JS-Portfolios/",
+  "homepage": "https://BradleyMatera.github.io/JS-Portfolios/reactapptest",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
