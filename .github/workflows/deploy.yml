@@ -18,16 +18,22 @@ jobs:
         with:
           node-version: '16'
 
+      - name: Change directory to reactapptest
+        run: cd react-js/reactapptest
+
       - name: Install dependencies
         run: npm install
+        working-directory: react-js/reactapptest
 
       - name: Build the React app
         run: npm run build
+        working-directory: react-js/reactapptest
 
       - name: Configure Git
         run: |
           git config --global user.email "you@example.com"
           git config --global user.name "Your Name"
+        working-directory: react-js/reactapptest
 
       - name: Deploy to GitHub Pages
         env:
@@ -35,3 +41,4 @@ jobs:
         run: |
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
           npm run deploy
+        working-directory: react-js/reactapptest
