@@ -137,6 +137,35 @@ function App() {
     </div>
   </div>
 </section>
+<section id="experience" className="py-5">
+  <div className="container">
+    <h2 className="text-center mb-5">Professional Experience</h2>
+    <div className="row">
+      <div className="col-lg-6 mb-4">
+        <div className="card">
+          <div className="card-body">
+            <h5 className="card-title">Healthcare Specialist</h5>
+            <h6 className="card-subtitle mb-2 text-muted">US Army</h6>
+            <p className="card-text">
+              Served as a Healthcare Specialist in the US Army, providing medical care in high-pressure environments, including deployment to Kandahar, Afghanistan. Gained expertise in crisis management, teamwork, and mission success.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="col-lg-6 mb-4">
+        <div className="card">
+          <div className="card-body">
+            <h5 className="card-title">Junior Developer</h5>
+            <h6 className="card-subtitle mb-2 text-muted">Freelance</h6>
+            <p className="card-text">
+              Developed and maintained web applications using HTML, CSS, and JavaScript. Managed YouTube content and academic projects, bringing a unique perspective to web development through hands-on experience and continuous learning.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
     </div>
