@@ -144,10 +144,10 @@ function App() {
       <div className="col-lg-6 mb-4">
         <div className="card">
           <div className="card-body">
-            <h5 className="card-title">Healthcare Specialist</h5>
-            <h6 className="card-subtitle mb-2 text-muted">US Army</h6>
+            <h5 className="card-title">Junior Web Developer</h5>
+            <h6 className="card-subtitle mb-2 text-muted">Freelance</h6>
             <p className="card-text">
-              Served as a Healthcare Specialist in the US Army, providing medical care in high-pressure environments, including deployment to Kandahar, Afghanistan. Gained expertise in crisis management, teamwork, and mission success.
+              As a Junior Web Developer, I have been working on various freelance projects, building responsive and user-friendly web applications using HTML, CSS, and JavaScript. I have collaborated with clients to understand their requirements and deliver high-quality solutions.
             </p>
           </div>
         </div>
@@ -155,10 +155,32 @@ function App() {
       <div className="col-lg-6 mb-4">
         <div className="card">
           <div className="card-body">
-            <h5 className="card-title">Junior Developer</h5>
-            <h6 className="card-subtitle mb-2 text-muted">Freelance</h6>
+            <h5 className="card-title">Healthcare Specialist</h5>
+            <h6 className="card-subtitle mb-2 text-muted">US Army</h6>
             <p className="card-text">
-              Developed and maintained web applications using HTML, CSS, and JavaScript. Managed YouTube content and academic projects, bringing a unique perspective to web development through hands-on experience and continuous learning.
+              Between June 2011 and April 2014, I served as a Healthcare Specialist in the US Army, deployed to Kandahar, Afghanistan. During this period, I honed my crisis management and teamwork skills, which I now apply in my web development projects.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="col-lg-6 mb-4">
+        <div className="card">
+          <div className="card-body">
+            <h5 className="card-title">Volunteer Coordinator</h5>
+            <h6 className="card-subtitle mb-2 text-muted">Various Non-Profit Organizations</h6>
+            <p className="card-text">
+              As a Volunteer Coordinator, I managed teams of volunteers, organized events, and developed strategies to enhance community engagement. This experience has strengthened my project management and leadership skills.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="col-lg-6 mb-4">
+        <div className="card">
+          <div className="card-body">
+            <h5 className="card-title">Content Manager</h5>
+            <h6 className="card-subtitle mb-2 text-muted">YouTube Channel</h6>
+            <p className="card-text">
+              Managed and created content for a YouTube channel, including video editing, SEO optimization, and audience engagement. This role allowed me to develop my creative skills and gain insights into digital marketing.
             </p>
           </div>
         </div>
@@ -166,6 +188,7 @@ function App() {
     </div>
   </div>
 </section>
+
 <section id="contact" className="py-5">
   <div className="container">
     <h2 className="text-center mb-5">Get in Touch</h2>
@@ -173,15 +196,15 @@ function App() {
       <div className="col-lg-6 mb-4">
         <form>
           <div className="mb-3">
-            <label for="name" className="form-label">Name</label>
+            <label htmlFor="name" className="form-label">Name</label>
             <input type="text" className="form-control" id="name" required />
           </div>
           <div className="mb-3">
-            <label for="email" className="form-label">Email</label>
+            <label htmlFor="email" className="form-label">Email</label>
             <input type="email" className="form-control" id="email" required />
           </div>
           <div className="mb-3">
-            <label for="message" className="form-label">Message</label>
+            <label htmlFor="message" className="form-label">Message</label>
             <textarea className="form-control" id="message" rows="5" required></textarea>
           </div>
           <button type="submit" className="btn btn-primary">Send Message</button>
@@ -213,6 +236,7 @@ function App() {
     </div>
   </div>
 </section>
+
 
 
     </div>
