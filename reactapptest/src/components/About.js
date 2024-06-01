@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Home = () => {
+const About = () => {
   return (
     <div>
       <h1>Welcome to Brad Matera's Portfolio</h1>
