@@ -13,6 +13,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Set up Git to use rebase
+        run: git config --global pull.rebase true
+
+      - name: Pull the latest changes
+        run: git pull origin main
+
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
@@ -27,7 +33,9 @@ jobs:
         working-directory: ./react-js/reactapptest
 
       - name: Deploy to GitHub Pages
-        run: npm run deploy
+        run: |
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+          npm run deploy
         working-directory: ./react-js/reactapptest
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
