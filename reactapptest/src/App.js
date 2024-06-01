@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About';
 import Projects from './components/Projects';
@@ -12,14 +12,14 @@ function App() {
   return (
     <Router basename="/JS-Portfolios/reactapptest">
       <div className="App">
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/projects" component={Projects} />
-          <Route path="/skills" component={Skills} />
-          <Route path="/experience" component={Experience} />
-          <Route path="/contact" component={Contact} />
-        </Switch>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/experience" element={<Experience />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
       </div>
     </Router>
   );
