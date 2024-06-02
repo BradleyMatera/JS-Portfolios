@@ -1,7 +1,7 @@
 {
   "name": "reactapptest",
   "version": "1.0.0",
-  "homepage": "https://BradleyMatera.github.io/JS-Portfolios/reactapptest",
+  "homepage": "https://BradleyMatera.github.io/JS-Portfolios/",
   "private": true,
   "dependencies": {
     "react": "^18.2.0",
