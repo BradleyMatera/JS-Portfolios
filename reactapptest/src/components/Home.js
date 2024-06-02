@@ -1,24 +1,7 @@
+// Example for Home.js
 import React from 'react';
 
 const Home = () => {
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const name = event.target.name.value;
-    const email = event.target.email.value;
-    const message = event.target.message.value;
-
-    if (!name || !email || !message) {
-      alert('Please fill in all fields.');
-      return;
-    }
-
-    alert(`Thank you for your message, ${name}! I will get back to you soon.`);
-
-    event.target.name.value = '';
-    event.target.email.value = '';
-    event.target.message.value = '';
-  };
-
   return (
     <div>
       <h1>Welcome to Brad Matera's Portfolio</h1>
@@ -32,19 +15,34 @@ const Home = () => {
                   <label htmlFor="name" className="form-label">
                     Name
                   </label>
-                  <input type="text" className="form-control" id="name" required />
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="name"
+                    required
+                  />
                 </div>
                 <div className="mb-3">
                   <label htmlFor="email" className="form-label">
                     Email
                   </label>
-                  <input type="email" className="form-control" id="email" required />
+                  <input
+                    type="email"
+                    className="form-control"
+                    id="email"
+                    required
+                  />
                 </div>
                 <div className="mb-3">
                   <label htmlFor="message" className="form-label">
                     Message
                   </label>
-                  <textarea className="form-control" id="message" rows="5" required></textarea>
+                  <textarea
+                    className="form-control"
+                    id="message"
+                    rows="5"
+                    required
+                  ></textarea>
                 </div>
                 <button type="submit" className="btn btn-primary w-100">
                   Send Message
@@ -56,8 +54,12 @@ const Home = () => {
                 <div className="card-body">
                   <h5 className="card-title">Contact Info</h5>
                   <p className="card-text">
-                    <i className="fas fa-map-marker-alt me-2"></i> Olympia, WA, USA<br />
-                    <i className="fas fa-envelope me-2"></i> bradmatera@gmail.com<br />
+                    <i className="fas fa-map-marker-alt me-2"></i> Olympia,
+                    WA, USA
+                    <br />
+                    <i className="fas fa-envelope me-2"></i>
+                    bradmatera@gmail.com
+                    <br />
                     <i className="fas fa-phone me-2"></i> +1 (360) 970-0581
                   </p>
                 </div>
