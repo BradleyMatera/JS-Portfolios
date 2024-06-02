@@ -30,6 +30,11 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
+        git config --global user.email "bradmatera@gmail.com"
+        git config --global user.name "BradleyMatera"
+        git add .
+        git commit -m "Automated build and deploy"
+        git push
         git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
         npm run deploy
       working-directory: ./reactapptest
