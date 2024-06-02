@@ -1,14 +1,13 @@
+// src/index.js
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
-import App from './components/App';
 import './index.css';
+import App from './App';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <Router basename="/JS-Portfolios/reactapptest">
-      <App />
-    </Router>
-  </React.StrictMode>
+ReactDOM.render(
+  <Router basename="/JS-Portfolios/reactapptest">
+    <App />
+  </Router>,
+  document.getElementById('root')
 );
