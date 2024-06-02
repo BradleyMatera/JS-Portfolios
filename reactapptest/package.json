@@ -1,18 +1,15 @@
 {
-  "name": "reactapptest",
-  "version": "1.0.0",
-  "homepage": "https://BradleyMatera.github.io/JS-Portfolios/reactapptest",
-  "private": true,
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.14.1",
-    "react-scripts": "^5.0.1"
+  "homepage": "https://BradleyMatera.github.io/JS-Portfolios/",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.18.9",
-    "babel-preset-react-app": "^10.0.1",
-    "gh-pages": "^6.1.1"
+    "gh-pages": "^3.2.3"
   },
   "scripts": {
     "start": "react-scripts start",
